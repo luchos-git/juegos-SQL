@@ -7,7 +7,6 @@ const pool = mysql.createPool({
   database: 'crudo_juegos',
   connectionLimit: 5,
 });
-
 //test connection
 pool.getConnection()
   .then((connection) => {
